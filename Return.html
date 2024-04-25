@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvio &ndash; Online Store</title>
+    <meta name="description" content="Alvio هو متجر إلكتروني مميز مصمم لبيع جميع أنواع المنتجات لجميع أفراد المجتمع. نقدم تشكيلة واسعة من المنتجات الحصرية والمميزة، بدءًا من الأجهزة الإلكترونية وصولًا إلى ... (يمكنك تحديد الفئات الأخرى التي يتم بيعها في المتجر، مثل الملابس، الإكسسوارات، الأدوات المنزلية، الهدايا، إلخ). بفضل تشكيلتنا الفريدة والجودة العالية للمنتجات، يمكن للعملاء الاستمتاع بتجربة تسوق ممتعة ومريحة. تسوق معنا اليوم واحصل على منتجاتك المفضلة بسهولة وأمان.">
+    <meta name="keywords" content="متجر إلكتروني, تسوق عبر الإنترنت, منتجات إلكترونية, أجهزة إلكترونية, تجهيزات منزلية, هدايا حصرية, تجربة تسوق, جودة عالية, تشكيلة واسعة, توصيل سريع, خدمة عملاء ممتازة, تجربة تسوق مريحة, عروض خاصة, تخفيضات">
+    <meta name="subtitle" content="متجر إلكتروني مميز لبيع أفضل المنتجات الإلكترونية وغيرها بأسعار مذهلة">
+    <meta property="og:site_name" content="Alvio">
+    <meta property="og:url" content="https://www.alvio.co.il/">
+    <meta property="og:image" content="socal.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- <link rel="stylesheet" href="assets/fonts/icons.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/78815d2efa.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="chekout.js"></script>
+    <style>
+        #wolf5rawo {
+        transition: opacity 1.3s; /* تحديد فترة الانتقال 2 ثانية */
+    }
+    @keyframes changeImage {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    </style>
+</head>
+
+<body style="max-width: 100%;
+min-width: 100%;"onload="setCurrentDateTime()">
+
+    <!-- Wrapper -->
+        <!-- Page -->
+        <main class="page">
+            <!-- Modal :: Product Quick View -->
+            <div class="modal fade" id="modal-quick-view" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title product-title fs-4">
+                                <a href="#">Apple Watch 7</a>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-4">
+                                <!-- Product gallery -->
+                                <div class="col-lg-7">
+                                    <div class="swiper-gallery">
+                                        <div class="swiper swiper-gallery-body product-gallery">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-image">
+                                                        <img alt="image" src="assets/img/product-gallery/big-01.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-image">
+                                                        <img alt="image" src="assets/img/product-gallery/big-02.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-image">
+                                                        <img alt="image" src="assets/img/product-gallery/big-03.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-image">
+                                                        <img alt="image" src="assets/img/product-gallery/big-04.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper swiper-gallery-body product-gallery-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-thumb-image">
+                                                        <img alt="image" src="assets/img/product-gallery/thumb-01.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-thumb-image">
+                                                        <img alt="image" src="assets/img/product-gallery/thumb-02.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-thumb-image">
+                                                        <img alt="image" src="assets/img/product-gallery/thumb-03.png">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-gallery-thumb-image">
+                                                        <img alt="image" src="assets/img/product-gallery/thumb-04.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product gallery -->
+                                <!-- Product details -->
+                                <div class="col-lg-5">
+                                    <div class="product-details">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="star-rating star-10 fs-6 align-middle"></span>
+                                            <span class="d-inline-block fs-sm ms-2">4.7 by 35 Reviews</span>
+                                        </div>
+                                        <!-- Product Price -->
+                                        <div class="product-price mb-3">
+                                            <div class="row g-2">
+                                                <div class="col-auto d-flex flex-column justify-content-center">
+                                                    <span class="text-accent fs-2">$349</span>
+                                                </div>
+                                                <div class="col d-flex flex-column justify-content-center">
+                                                    <del class="text-body-secondary"><span class="fs-sm">$499</span></del>
+                                                    <span class="text-danger fs-sm mt-n1">You save 30% (150$)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Price -->
+                                        <!-- Color Picker -->
+                                        <h5 class="h6 mb-2">Color</h5>
+                                        <div class="mb-3">
+                                            <div class="form-check form-option form-check-inline">
+                                                <input class="form-check-input" type="radio" name="radioColor" id="color1" checked>
+                                                <label class="form-option-label rounded-circle" for="color1">
+                                                    <span class="form-option-color rounded-circle" style="background-color: var(--bs-info-border-subtle);"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-option form-check-inline">
+                                                <input class="form-check-input" type="radio" name="radioColor" id="color2">
+                                                <label class="form-option-label rounded-circle" for="color2">
+                                                    <span class="form-option-color rounded-circle" style="background-color: var(--bs-primary-border-subtle);"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-option form-check-inline">
+                                                <input class="form-check-input" type="radio" name="radioColor" id="color3">
+                                                <label class="form-option-label rounded-circle" for="color3">
+                                                    <span class="form-option-color rounded-circle" style="background-color: var(--bs-danger-border-subtle);"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- Color Picker -->
+                                        <div class="d-flex align-items-center">
+                                            <!-- Quantity Products -->
+                                            <div class="quantity-products me-3">
+                                                <button class="quantity-btn-minus"><i class="ri-subtract-line"></i></button>
+                                                <input id="quantityNumber" class="quantity-number" type="number" value="1">
+                                                <button class="quantity-btn-plus"><i class="ri-add-line"></i></button>
+                                            </div>
+                                            <!-- Quantity Products -->
+                                            <!-- Button -->
+                                            <button class="btn btn-primary d-flex align-items-center justify-content-center w-100" type="button">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                                <span class="d-none d-sm-inline ms-2">Add to Cart</span>
+                                            </button>
+                                            <!-- Button -->
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="d-flex pt-2 mb-4">
+                                            <div class="w-50 me-3">
+                                                <button class="btn btn-secondary d-block w-100" type="button">
+                                                    <span class="d-none d-sm-inline">Add to </span> Wishlist </button>
+                                            </div>
+                                            <div class="w-50">
+                                                <button class="btn btn-secondary d-block w-100" type="button"> Compare </button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <!-- Info List -->
+                                        <h5 class="h6 mb-3 py-2 border-bottom"><i class="ri-information-line text-body-secondary fs-lg align-middle mt-n1 me-2"></i>Product information</h5>
+                                        <h6 class="fs-sm mb-2">General</h6>
+                                        <ul class="fs-sm pb-2">
+                                            <li><span class="text-body-secondary">Type: </span>Smart Watch</li>
+                                            <li><span class="text-body-secondary">Connection: </span>Bluetooth 5.0</li>
+                                            <li><span class="text-body-secondary">OS: </span>WatchOS</li>
+                                        </ul>
+                                        <h6 class="fs-sm mb-2">Powering</h6>
+                                        <ul class="fs-sm mb-0">
+                                            <li><span class="text-body-secondary">Chargering: </span>Wireless</li>
+                                            <li><span class="text-body-secondary">Battery: </span>Li-Ion</li>
+                                            <li><span class="text-body-secondary">Battery life: </span>18 hours</li>
+                                        </ul>
+                                        <!-- Info List -->
+                                    </div>
+                                </div>
+                                <!-- Product details -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal :: Product Quick View -->
+            <!-- Header -->
+            <header class="navigation shadow-sm border-bottom">
+                <!-- Topbar -->
+                <div class="topbar">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Links -->
+                            <div class="col col-lg-auto">
+                                <ul class="topbar-list d-none d-md-flex">
+                                    <li class="topbar-item">
+                                        <a href="" class="topbar-link d-flex align-items-center">
+                                            <i class="ri-scales-3-line text-primary me-1"></i> Compare (0) </a>
+                                    </li>
+                                    <li class="topbar-item">
+                                        <a href="" class="topbar-link d-flex align-items-center">
+                                            <i class="ri-heart-line text-primary me-1"></i> Wishlist </a>
+                                    </li>
+                                    <li class="topbar-item">
+                                        <a href="" class="topbar-link d-flex align-items-center">
+                                            <i class="ri-map-pin-line text-primary me-1"></i> Track You Order </a>
+                                    </li>
+                                </ul>
+                                <ul class="topbar-list d-flex d-md-none">
+                                    <li class="topbar-item dropdown d-block d-md-none">
+                                        <a href="" class="topbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                                            <i class="ri-links-line text-primary me-1"></i> Useful Links </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center" href="">
+                                                    <i class="ri-scales-3-line text-primary me-1"></i> Compare (3) </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center" href="">
+                                                    <i class="ri-heart-line text-primary me-1"></i> Wishlist </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center" href="">
+                                                    <i class="ri-map-pin-line text-primary me-1"></i> Track You Order </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Links -->
+                            <!-- Slider -->
+                            <div class="col min-width-0 d-none d-lg-flex">
+                                <div class="swiper topbar-swiper text-center">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">تفضل بالشراء الآن واحصل على عروض حصرية وهدايا مجانية</div>
+                                        <div class="swiper-slide"> اشترِ الآن واحصل على كوبونات خصم لطلباتك القادمة </div>
+                                        <div class="swiper-slide"> اشترِ الآن واحصل على كوبون هدية مجانية مع طلباتك القادمة </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider -->
+                            <!-- Links -->
+                            <div class="col col-lg-auto">
+                                <ul class="topbar-list topbar-list-right">
+                                    <li class="topbar-item">
+                                        <a href="#" class="switch-theme topbar-text text-reset d-flex align-items-center">
+                                            <span class="d-none d-md-block">Switch theme</span>
+                                            <i class="text-primary ri-toggle-line ms-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="topbar-item dropdown">
+                                        <a href="#" class="topbar-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                                            عربي
+                                            <!-- <img src="assets/img/icons/flags/us.png" alt="image"> -->
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <!-- <img class="me-3" src="assets/img/icons/flags/us.png" alt="image"> -->
+                                                    عربي </a>
+                                            </li>
+                                            <!-- <li>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <img class="me-3" src="assets/img/icons/flags/de.png" alt="image">
+                                                     German </a>
+                                            </li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="topbar-item dropdown">
+                                        <a href="#" class="topbar-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">ILS</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item d-flex align-items-center" href="#">₪ ILS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Links -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Topbar -->
+                <!-- Navbar Sticky -->
+                <div class="navbar-sticky">
+                    <!-- Navbar -->
+                    <div class="navbar navbar-middle navbar-expand-lg">
+                        <div class="container">
+                            <!-- Logo -->
+                            <a class="navbar-brand flex-shrink-0 d-sm-none" href="index.html"><img src="assets/img/logo/logo-mobile.png" width="44" alt="Marketop"></a>
+                            <a class="navbar-brand flex-shrink-0 d-none d-sm-block" href="index.html"><img src="assets/img/logo/logo-light.png" alt="Marketop" style="width: 110px; margin-right: 10px;"></a>
+                            <!-- Logo -->
+                            <!-- Search -->
+                            <div class="input-group d-none d-lg-flex me-5">
+                                <input id="searchInput" class="form-control" type="text" placeholder="Search for products">
+                                <select id="searchSelect" class="form-select flex-shrink-0" style="max-width: 11rem;">
+                                    <option>כל המחלקות</option>
+                                </select>
+                                <button type="button" class="btn btn-primary bg-gradient d-none d-lg-block" style="background: #faaf40;border: solid 1px;background: #fcd905;">Search</button>
+                            </div>
+                            <!-- Search -->
+                            <!-- Navbar Actions -->
+                            <div class="navbar-actions">
+                                <!-- <a href="#" class="navbar-actions-item navbar-stuck-toggle">
+                                    <div class="navbar-actions-icon-box">
+                                        <i class="navbar-actions-icon ri-menu-line fs-5"></i>
+                                    </div>
+                                </a> -->
+                                <!-- <a href="#" class="navbar-actions-item d-lg-none" role="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                    <div class="navbar-actions-icon-box">
+                                        <i class="navbar-actions-icon ri-menu-line fs-5"></i>
+                                    </div>
+                                </a> -->
+                                <!-- <a href="" class="navbar-actions-item">
+                                    <div class="navbar-actions-icon-box">
+                                        <i class="navbar-actions-icon ri-user-line fs-5"></i>
+                                    </div>
+                                    <div class="navbar-actions-text d-none d-lg-block fs-md pe-3">
+                                        <small class="d-block mb-n1">Sign In</small> Account
+                                    </div>
+                                </a> -->
+                                
+                                <!-- <a href="" class="navbar-actions-item" id="hideme">
+                                    <div class="navbar-actions-icon-box">
+                                        <i class="navbar-actions-icon ri-heart-line fs-5"></i>
+                                    </div>
+                                </a> -->
+
+                                <!-- <span class="navbar-actions-item shopping-cart icon-cart" id="hideme">
+                                    <div class="navbar-actions-icon-box shopping">
+                                        <i class="navbar-actions-icon ri-shopping-cart-2-line fs-5"></i>
+                                    </div>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-quantity" id="qoant11">0</span>
+                                </span> -->
+                                
+                                
+
+
+                            </div>
+                            <!-- Navbar Actions -->
+                        </div>
+                    </div>
+                    <!-- Navbar -->
+                    <!-- Navs -->
+                    <div class="navbar navbar-expand-lg navbar-stuck-menu py-0 py-lg-1 bg-body-tertiary">
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <!-- Departments Menu -->
+                                <ul class="navbar-nav mega-nav pe-lg-1 me-lg-1  mt-3 mt-lg-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle ps-lg-0" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <i class="ri-function-line me-2"></i> כל המחלקות </a>
+                                            <ul class="dropdown-menu">
+                                                <!-- Department -->
+                <!-- <li class="dropdown mega-dropdown">
+                    <a class="dropdown-item dropdown-toggle align-middle" href="#" data-bs-toggle="dropdown">
+                        <i class="ri-macbook-line fs-lg me-2"></i> Computers &amp; Accessories </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                                <div class="widget widget-links">
+                                    <h6 class="fs-base mb-3">Computers</h6>
+                                    <ul class="widget-list">
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Personal Computers</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Laptops &amp; Tablets</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Mobile Computers</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Portable Computers</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Embedded Systems</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Network Computers (NAS)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-column py-4 px-3">
+                                <div class="widget widget-links">
+                                    <h6 class="fs-base mb-3">Accessories</h6>
+                                    <ul class="widget-list">
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Monitors</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Keyboards</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Gaming Mouses</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">HDD/SSD Data Storage</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Routers</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Graphics Cards</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Memory (RAM)</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">UPS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-column d-none d-lg-block py-4 text-center">
+                                <a class="link-accent d-block mb-2" href="#">
+                                    <i class="ri-computer-line" style="font-size:7rem;"></i>
+                                </a>
+                                <div class="fs-sm mb-3"> Offers from <span class='text-body-secondary w-medium'>$249</span>
+                                </div>
+                                <a class="btn btn-primary btn-shadow btn-sm" href="#"> View Catalog </a>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- Department -->
+                <!-- Department -->
+                <li class="dropdown mega-dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <i class="ri-tv-line fs-lg me-2"></i> Projector </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                                <div class="widget widget-links">
+                                    <h6 class="fs-base mb-3">Projector</h6>
+                                    <ul class="widget-list">
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=1">cinema projector 4k Top</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Department -->
+                <!-- Department -->
+                <li class="dropdown mega-dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <i class="ri-headphone-line fs-lg me-2"></i> Headphones </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                                <div class="widget widget-links">
+                                    <h6 class="fs-base mb-3">Headphones</h6>
+                                    <ul class="widget-list">
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=2">Apple AirPods Max | 1:1</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=7">USAMS-YX05 - HEADPHONS</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=8">USAMS-YN001 HEADPHONS B</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=6">Apple AirPods Pro 2 | 1:1</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=9">USAMS-YX05 - HEADPHONS W</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-column d-none d-lg-block py-4 text-center">
+                                <a class="link-accent d-block mb-2" href="#">
+                                    <i class="ri-headphone-line" style="font-size:7rem;"></i>
+                                </a>
+                                <div class="fs-sm mb-3"> מבצעים מ-  <span class='text-body-secondary w-medium'>%50</span>
+                                </div>
+                                <!-- <a class="btn btn-primary btn-shadow btn-sm" href="#"> View Catalog </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Department -->
+                <!-- Department -->
+                <li class="dropdown mega-dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <i class="ri-timer-line fs-lg me-2"></i> Smart Watches </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                                <div class="widget widget-links">
+                                    <h6 class="fs-base mb-3">Watches</h6>
+                                    <ul class="widget-list">
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=3">Apple Watch Series 9 | 1:1</a></li>
+                                        <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=5">Apple Watch Ultra 2 | 1:1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-column d-none d-lg-block py-4 text-center">
+                                <a class="link-accent d-block mb-2" href="#">
+                                    <i class="ri-timer-line" style="font-size:7rem;"></i>
+                                </a>
+                                <div class="fs-sm mb-3"> מבצעים מ-  <span class='text-body-secondary w-medium'>%50</span>
+                                </div>
+                                <!-- <a class="btn btn-primary btn-shadow btn-sm" href="#"> View Catalog </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Department -->
+                            <!-- Department -->
+                            <li class="dropdown mega-dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <i class="ri-smartphone-line fs-lg me-2"></i> Phone Accessories  </a>
+                                <div class="dropdown-menu p-0">
+                                    <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                                        <div class="dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                                            <div class="widget widget-links mb-3">
+                                                <h6 class="fs-base mb-3">Phone Accessories </h6>
+                                                <ul class="widget-list">
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="detail.html?id=11">Transparent Case For Iphone</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- <div class="widget widget-links">
+                                                <h6 class="fs-base">Tablets</h6>
+                                                <ul class="widget-list">
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Apple iPad</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Android Tablets</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Convertible Tablets</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Rugged Tablets</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-column py-4 px-3">
+                                            <div class="widget widget-links">
+                                                <h6 class="fs-base mb-3">Accessories</h6>
+                                                <ul class="widget-list">
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Batteries</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Cables</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Power Adapters</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Chargers</a></li>
+                                                    <li class="widget-list-item pb-1"><a class="widget-list-link" href="#">Styluses</a></li>
+                                                </ul>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="dropdown-column d-none d-lg-block py-4 text-center">
+                                            <a class="link-accent d-block mb-2" href="#">
+                                                <i class="ri-smartphone-line" style="font-size:7rem;"></i>
+                                            </a>
+                                            <div class="fs-sm mb-3"> Offers from <span class='text-body-secondary w-medium'>$99</span>
+                                            </div>
+                                            <a class="btn btn-primary btn-shadow btn-sm" href="#"> View Catalog </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Department -->
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- Departments Menu -->
+                               <!-- Primary Menu -->
+                               <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="index.html">בית</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">דפי</a>
+                                    <div class="dropdown-menu p-0">
+                                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                                            <div class="dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                                                <div class="widget widget-links mb-4">
+                                                    <h6 class="fs-base mb-3">website pages</h6>
+                                                    <ul class="widget-list">
+                                                        <li class="widget-list-item"><a class="widget-list-link" href="#">בית</a></li>
+                                                        <li class="widget-list-item"><a class="widget-list-link" href="contacts.html">צור קשר</a></li>
+                                                        <li class="widget-list-item"><a class="widget-list-link" href="about-us.html">אודות</a></li>
+                                                        <li class="widget-list-item"><a class="widget-list-link" href="Return.html">מדיניות החזרה</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li  class="nav-item"><a class="nav-link" href="contacts.html">צור קשר</a></li>
+                                <li  class="nav-item"><a class="nav-link" href="about-us.html">אודות</a></li>
+                                <li  class="nav-item"><a class="nav-link" href="Return.html">מדיניות החזרה</a></li>
+                            </ul>
+                            <!-- Primary Menu -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navs -->
+                </div>
+                <!-- Navbar Sticky -->
+            </header>
+            <!-- Page Title -->
+            <div class="py-4" style="background-color: var(--bs-secondary-bg);">
+                <div class="container d-lg-flex justify-content-between align-items-center py-2 py-lg-4">
+                    <div class="pe-lg-4 text-center text-lg-start">
+                        <h1 class="h3 mb-0">Return</h1>
+                    </div>
+                    <div class="pt-2 pt-lg-0">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+                                <li class="breadcrumb-item">
+                                    <a class="text-nowrap" href="index.html">
+                                        <i class="ri-store-2-line"></i> בית </a>
+                                </li>
+                                <li class="breadcrumb-item text-nowrap active" aria-current="page">מדיניות החזרה</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+<br>
+
+<!-- Content -->
+<div class="container mb-4 mb-lg-10" id="hegihtwolf">
+    <div class="row g-4 g-lg-10">
+        <div class="col-12 col-lg-9" style="margin: auto;text-align: right;">
+            <h4>מי אנחנו</h4>
+            <p id="wolfsolfa">
+                : يمكن تبديل الطلبية خلال 24 ساعة من استلامها ولا يمكن التبديل بعد هذه المدة كما يجب مراعاة الشروط التالية 
+            </p>
+            <ol style="text-align: right;direction: rtl;    margin: 0;
+            padding: 20px;
+            "  id="wolfsolfa">
+
+                <li>
+                    أن يكون المنتج بنفس الحالة التي وصلك فيها .
+                </li>
+
+                <li>
+                    يكون المنتج مع كامل أغراضه التي وصل بها .
+                </li>
+
+                <li>
+                    يجب تقديم طلب التبديل عبر الواتساب خلال 24 ساعة وإرفاق صور المنتج و ملحقاته .
+                </li>
+
+                <li>
+                    يتحمل العميل تكلفة الشحن .
+                </li>
+
+            </ol>
+            <p id="wolfsolfa">
+                فريق خدمة العملاء يسعد بالرد على إستفساراتكم :
+                واتساب : <a href="" id="linkpro">+972534855338</a>
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Content -->
+
+<br>
+<br>
+
+<style>
+    #wolfsolfa {
+        font-size: 16px;
+    }
+    #linkpro {
+        color: #003366;
+    }
+    #linkpro:hover {
+        color: #ff8800;
+    }
+    #hegihtwolf {
+            height: 330px;
+            padding-top: 50px;
+        }
+    @media screen and (max-width:700px) {
+        #colsrol {
+        margin: auto;
+        text-align: center;
+        }
+        #hegihtwolf {
+            height: 340px;
+        }
+        #wolfsolfa {
+        font-size: 14px;
+        }
+    }
+</style>
+
+
+        <!-- Footer -->
+        <footer class="footer" style="background-color: var(--bs-secondary-bg);padding: 10px;">
+            <div class="footer-top py-4 py-lg-10 border-top">
+                <div class="container">
+                    <div class="row g-4 g-lg-10">
+                        <div class="col-lg-8">
+                            <div class="row g-4">
+                                <div class="col-12 col-md">
+                                    <div class="widget widget-links">
+                                        <h3 class="widget-title">דפי </h3>
+                                        <ul class="widget-list">
+                                            <li class="widget-list-item"><a class="widget-list-link" href="index">בית</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="contacts">צור קשר</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="about-us">אודות</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="Return.html">מדיניות החזרה</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="widget widget-links">
+                                        <h3 class="widget-title">המחלקות</h3>
+                                        <ul class="widget-list">
+                                            <label for="" style="font-size: 14px;">projector</label>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=1">cinema projector 4k Top</a></li>
+                                            <label for="" style="font-size: 14px;">Headphones</label>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=2">Apple AirPods Max | 1:1</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=7">USAMS-YX05 - HEADPHONS</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=8">USAMS-YN001 HEADPHONS B</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=6">Apple AirPods Pro 2 | 1:1</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=9">USAMS-YX05 - HEADPHONS W</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="widget widget-links">
+                                        <h3 class="widget-title">המחלקות</h3>
+                                        <ul class="widget-list">
+                                            <label for="" style="font-size: 14px;"> Smart Watches </label>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=3">Apple Watch Series 9 | 1:1</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=5">Apple Watch Ultra 2 | 1:1</a></li>
+                                            <label for="" style="font-size: 14px;"> Phone Accessories </label>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="detail.html?id=11">Transparent Case For Iphone</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12 col-md">
+                                    <div class="widget widget-links">
+                                        <h3 class="widget-title">דפי </h3>
+                                        <ul class="widget-list">
+                                            <li class="widget-list-item"><a class="widget-list-link" href="index">בית</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="contacts">צור קשר</a></li>
+                                            <li class="widget-list-item"><a class="widget-list-link" href="about-us">אודות</a></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                        
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-4">
+                                <h6 class="mb-2">Newsletter</h6>
+                                <div class="input-group">
+                                    <input id="subscribeInput" type="text" class="form-control" placeholder="Email Address" aria-label="Subscribe" aria-describedby="button-subscribe">
+                                    <button class="btn btn-primary" type="button" id="button-subscribe">Subscribe</button>
+                                </div>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <i class="ri-send-plane-line text-body-secondary fs-sm me-2"></i>
+                                    <span class="text-body-secondary fs-sm">Subscribe for newsletter and receive a discount coupon for your purchases.</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <i class="text-primary ri-customer-service-2-line" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mb-0">תמיכה טכנית 24/7</h6>
+                                        <a href="tel:+2025550135" class="nav-link-base">+972534855338</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <i class="text-primary ri-map-pin-line" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mb-1 font-weight-bold">פרטי כתובת</h6>
+                                        <span>ישראל</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <i class="text-primary ri-timer-line" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mb-1 font-weight-bold">שעות עבודה</h6>
+                                        <span class="d-block">שני - שישי: 09:00 - 18:00</span>
+                                        <span class="d-block">שבת:10:00 - 15:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-top py-4">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-3 text-center text-lg-start">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a class="link-accent fs-xl" href="#">
+                                        <i class="ri-facebook-line"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="link-danger fs-xl" href="https://www.instagram.com/alvio.co.il">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="link-info fs-xl" href="#">
+                                        <i class="ri-twitter-line"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-6 text-center">
+                            <a href="https://www.instagram.com/vortexa_services/" class="nav-link-base fs-sm">&copy; 2023 - 2024 Vortexa</a>
+                        </div>
+                        <div class="col-12 col-lg-3 text-center text-lg-end mt-3 mt-lg-0">
+                            <img class="d-inline-block align-middle" src="assets/img/shop/cards.png" width="246" alt="Cerdit Cards">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <!-- Mobile Toolbar for Mobile Devices -->
+        <div class="mobile-toolbar">
+            <a class="mobile-toolbar-item " href="" style="display: none;">
+                <span class="mobile-toolbar-icon">
+                    <i class="ri-heart-line"></i>
+                </span><span class="mobile-toolbar-label">Wishlist</span>
+            </a>
+            <a class="mobile-toolbar-item" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)">
+                <span class="mobile-toolbar-icon">
+                    <i class="ri-menu-line"></i>
+                </span>
+                <span class="mobile-toolbar-label">Menu</span>
+            </a>
+            <span class="mobile-toolbar-item" id="shoppwolf" style="display: none;">
+                <span class="navbar-actions-item">
+                    <div class="navbar-actions-icon-box shopping">
+                        <i class="navbar-actions-icon ri-shopping-cart-2-line fs-5"></i>
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-quantity" id="quantity_11">0</span>
+                </span>
+                <span class="mobile-toolbar-label">cart</span>
+            </span>
+        </div>
+        <!-- Mobile Toolbar for Mobile De
+            vices -->
+    </div>
+    <style>
+        .addCart {
+          background-color: #003366;
+          border: none;
+          color: black;
+          width: 100%;
+          height: 40px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          border-radius: 3px;
+          margin-top: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .addCart i {
+            padding-right: 5px;
+        }
+        
+        .addCart:hover {
+            background-color: #1d5389;
+        }
+      </style>
+    <!-- Wrapper -->
+    <!-- Scripts -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="index.js" type="module"></script>
+    <!-- Scripts -->
+</body>
+
+</html>
